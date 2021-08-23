@@ -34,7 +34,7 @@ const Home: NextPage = () => {
           <h4 className={styles.title}>loading...</h4>
         ) : (
           <InfiniteScroll
-            loadMore={fetchNextPage}
+            loadMore={() => fetchNextPage()}
             hasMore={hasNextPage}
             loader={
               <h4 className={styles.title} style={{ color: '#1b4332' }}>
