@@ -116,6 +116,16 @@
 @media (max-width: 600px) {
   .grid {
     width: 100%;
-    flex-direction: column;
   }
+}
+
+.endMessageWrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.endMessage {
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
 }
