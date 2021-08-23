@@ -1,0 +1,25 @@
+.personWrapper {
+  border: 1px solid #1b4332;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 14px;
+  background-color: #d8f3dc;
+  transition: all;
+  transition-duration: 500ms;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 200px;
+  height: 200px;
+}
+.personWrapper:hover {
+  transform: scale(1.05);
+  background-color: #b7e4c7;
+  border-color: #40916c;
+}
+
+.personName {
+  color: #1b4332;
+}
