@@ -1,9 +1,8 @@
 import Person, { IPerson } from 'components/Person';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import InfiniteScroll from 'react-infinite-scroller';
-import { useInfiniteQuery, useQuery } from 'react-query';
+import { useInfiniteQuery } from 'react-query';
 import styles from 'styles/Home.module.css';
 
 const fetchPeople = async (url: string) => {
@@ -71,19 +70,6 @@ const Home: NextPage = () => {
           </InfiniteScroll>
         )}
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   );
 };
